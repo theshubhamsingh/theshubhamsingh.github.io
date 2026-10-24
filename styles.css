@@ -46,15 +46,45 @@
     }
 
     /* Apple Developer Inspired Glassmorphism */
-    .glass {
-      background: var(--glass-bg);
-      backdrop-filter: blur(40px);
-      -webkit-backdrop-filter: blur(40px);
-      border: 1px solid var(--glass-border);
-      border-radius: 1.5rem;
-      padding: 3rem;
-    }
+    /* Apple Developer Inspired Glassmorphism with 3D Support */
+.glass {
+  position: relative;
+  background: var(--glass-bg);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  
+  /* 3D Transform properties linked to JavaScript */
+  transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
 
+/* Dynamic Glare Effect */
+.glass::before {
+  content: "";
+  position: absolute; 
+  inset: 0;
+  /* Uses JS variables --mx and --my to track the mouse */
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255,255,255,0.12), transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.glass:hover::before {
+  opacity: 1;
+}
+
+/* Ensure text stays above the glare */
+.glass > * {
+  position: relative;
+  z-index: 20;
+}
     /* Hero Section */
     .hero {
       text-align: left;
