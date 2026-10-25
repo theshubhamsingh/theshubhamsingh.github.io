@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>DACE Admissions 2025-26 | Central University Punjab</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional custom styles specifically for the admissions data */
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      background: rgba(0, 113, 227, 0.2);
+      color: #a5d6ff;
+      border: 1px solid rgba(0, 113, 227, 0.4);
+      margin-bottom: 1rem;
+    }
+    .badge.alert {
+      background: rgba(255, 69, 58, 0.2);
+      color: #ff7570;
+      border-color: rgba(255, 69, 58, 0.4);
+    }
+    ul.doc-list {
+      list-style: none;
+      margin-top: 1rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    ul.doc-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    ul.doc-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+    .btn-apply {
+      display: inline-block;
+      background: var(--text-main);
+      color: var(--bg);
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .btn-apply:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    .grid-span-2 {
+      grid-column: span 2;
+    }
+    @media (max-width: 768px) {
+      .grid-span-2 { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Mesh Background -->
+  <div class="bg" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+  </div>
+
+  <main class="container">
+    <!-- Hero / Welcome Section -->
+    <header class="glass hero">
+      <span class="eyebrow">Advt. No. CUPB/26-27/015 | Date: 14.10.2026</span>
+      <h1>Dr. Ambedkar Centre <br>of Excellence (DACE)</h1>
+      <p>Admissions Open for UPSC & State-PSCs Coaching<br>Batch 2025-26 (3rd Round)</p>
+      
+      <div class="terminal">
+        <span class="comment">// Admission portal status</span><br>
+        <span class="keyword">const</span> application = {<br>
+        &nbsp;&nbsp;target: <span class="string">"SC & OBC Students (Category A)"</span>,<br>
+        &nbsp;&nbsp;deadline: <span class="string">"19 October 2026 (Monday)"</span>,<br>
+        &nbsp;&nbsp;status: <span class="keyword">"OPEN"</span><br>
+        };
+      </div>
+    </header>
+
+    <!-- Content Architecture Grid -->
+    <section class="bento-grid">
+      
+      <!-- Eligibility Card -->
+      <article class="glass bento-card">
+        <span class="badge">Eligibility Criteria</span>
+        <h2>Who can apply?</h2>
+        <ul class="doc-list">
+          <li><strong>Age Limit:</strong> 21 to 36 years (as of 09.08.2026).</li>
+          <li><strong>Education:</strong> Min 50% in 10+2. Must have a Graduation Degree or be in the final year of Graduation.</li>
+          <li><strong>Income:</strong> Total family income ≤ Rs. 8.00 lakh/annum.</li>
+          <li><strong>Reservation:</strong> 30% of seats are strictly reserved for Female candidates.</li>
+        </ul>
+      </article>
+
+      <!-- Benefits & Stipend Card -->
+      <article class="glass bento-card">
+        <span class="badge">Financial Support</span>
+        <h2>Benefits & Stipend</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">Coaching is provided via Scholarship based on the Merit List.</p>
+        <ul class="doc-list">
+          <li><strong>Monthly Stipend:</strong> Rs. 4,000/month disbursed via Direct Benefit Transfer (DBT) to an Aadhaar-seeded bank account.</li>
+          <li><strong>Mains Incentive:</strong> Rs. 15,000 provided to candidates clearing the mains stage (Group 1/2) for interview preparation.</li>
+        </ul>
+      </article>
+
+      <!-- Important Rules -->
+      <article class="glass bento-card">
+        <span class="badge alert">Strict Guidelines</span>
+        <h2>Rules & Regulations</h2>
+        <ul class="doc-list">
+          <li><strong>Attendance:</strong> Physical mode attendance is mandatory.</li>
+          <li><strong>Absence:</strong> Missing >4 days without prior permission will result in immediate scholarship cancellation.</li>
+          <li><strong>Midway Dropouts:</strong> Leaving the program midway without approval will result in the recovery of incurred expenditure.</li>
+        </ul>
+      </article>
+
+      <!-- Document Checklist (Spans wider for readability) -->
+      <article class="glass bento-card grid-span-2">
+        <span class="badge">Application Checklist</span>
+        <h2>Required Documents</h2>
+        <p style="color: var(--text-muted);">All documents must be in .jpeg or .pdf format and less than 500 kb (unless specified). Only online applications accepted.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+          <ul class="doc-list">
+            <li>Passport-size photo (.jpeg, <100kb)</li>
+            <li>Signature (.jpeg, <100kb)</li>
+            <li>Proof of Age (10th Certificate)</li>
+            <li>Intermediate (12th) Marksheet</li>
+            <li>Aadhaar Card</li>
+          </ul>
+          <ul class="doc-list">
+            <li>Graduation Degree & Marksheet</li>
+            <li><strong>* Caste Certificate</strong> (Mandatory)</li>
+            <li><strong>* Latest Income Certificate</strong> from Revenue Officer (Tehsildar rank or above)</li>
+            <li>Personal Email ID & Mobile Number</li>
+          </ul>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Oversized Footer for CTA and Contact -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <div class="footer-huge">
+          <a href="#">Apply Now.</a>
+        </div>
+        <p style="color: var(--text-muted); max-width: 300px;">
+          Admit cards for the DACE Entrance Examination 2025-26 will be available soon.
+        </p>
+        <a href="#" class="btn-apply">Registration Form 2025-26 &rarr;</a>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Contact Nodal Officer</h3>
+        <ul style="color: var(--text-muted); line-height: 1.6;">
+          <li style="color: var(--text-main); font-weight: 600;">Dr. Vinod Arya</li>
+          <li>Central University Punjab</li>
+          <li>VPO-Ghudda, Bathinda</li>
+          <li>Punjab, India - 151401</li>
+          <li style="margin-top: 1rem;"><a href="mailto:dace@cup.edu.in">dace@cup.edu.in</a></li>
+          <li><a href="tel:+918800499177">+91 88004 99177</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Important Links</h3>
+        <ul>
+          <li><a href="https://cup.edu.in" target="_blank">Central University of Punjab</a></li>
+          <li><a href="#" target="_blank">Dr. Ambedkar Foundation</a></li>
+          <li><a href="#">Recruitment</a></li>
+          <li><a href="#">Archives</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
