@@ -1,9 +1,3 @@
----
-layout: default
-title: Doctor Sosology
-permalink: /theshubhamsingh/
----
-
 <!-- Hero / Welcome Section -->
 <header class="glass hero">
   <span class="eyebrow">Welcome to</span>
